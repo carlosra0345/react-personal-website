@@ -1,0 +1,73 @@
+body {
+  background-color: #223240;
+  font-size: 1.3rem;
+  color: white;
+}
+
+/*NavBar styling*/
+nav{
+  font-size: 80%;
+  font-family: var(--mono);
+  padding-top: 1.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.5rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav h1 a {
+  font-family : var(--sans);
+}
+
+nav ul h1 i{
+  justify-content: left;
+}
+
+.nav-list{
+  list-style-type : none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.brand-icon{
+  font-size: 2rem;
+}
+
+.nav-link{
+  color : var(--white);
+  text-decoration: none;
+  display : block;
+}
+
+.nav-link:hover{
+  transition: 0.6s;
+  color: var(--magenta);
+  text-decoration: underline;
+}
+
+.resume-button{
+  background-color : var(--magenta);
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.resume-button:hover{
+  transition: 0.6s;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.resume-button:active{
+  background-color: #ef4fdc;
+  color: var(--white);
+}
