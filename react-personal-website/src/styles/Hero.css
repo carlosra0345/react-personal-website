@@ -1,0 +1,61 @@
+/*hero landing page*/
+
+/*global css properties*/
+:root {
+  --darkblue: #1a2630;
+  --aurablue: #223240;
+  --plum: #4b0d49;
+  --lightplum: #e63ce0, --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+.text-container {
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+}
+
+#intro {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#intro p {
+  font-size: 3.25vw;
+  line-height: 1.25;
+}
+
+#intro .name {
+  font-family: var(--mono);
+  font-size: 3.25vw;
+}
+
+.name span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 6vw;
+  color: var(--aqua);
+}
+
+#intro h2 {
+  font-size: 3.25vw;
+  font-weight: normal;
+  padding-bottom: 1vw;
+}
+
+.arrow-icon {
+  font-size: 3vw;
+}
+
+.arrow-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.arrow-icon:active {
+  opacity: 0.6;
+}
