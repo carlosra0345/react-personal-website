@@ -1,0 +1,21 @@
+.general-button-container {
+    background-color: #e310cb;
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.general-button-text {
+    color: white;
+    text-align: center;
+    margin: 0
+}
+
+.general-button-container:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.general-button-container:active {
+    opacity: 0.4;
+}

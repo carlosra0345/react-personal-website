@@ -1,0 +1,24 @@
+/*Main About Me styling*/
+
+/*global css properties*/
+:root {
+  --darkblue: #1a2630;
+  --aurablue: #223240;
+  --plum: #4b0d49;
+  --lightplum: #e63ce0, --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+.main-text-style {
+    font-size: 1.65rem;
+}
+
+.link-style {
+    text-decoration: none;
+    color: var(--aqua);
+}
