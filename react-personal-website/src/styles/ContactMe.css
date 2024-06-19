@@ -1,0 +1,98 @@
+/*Contact me styling*/
+#contact{
+    padding-bottom: 2%;
+    width: 50%;
+}
+
+#contact h2{
+    margin-bottom: 5%;
+}
+
+.contact-form{
+    display : flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contact-input{
+    background-color: var(--darkblue);
+    border-style: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.contact-input::placeholder{
+    color: var(--white);
+}
+
+.message-input{
+    background-color: var(--darkblue);
+    border-style: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 8rem;
+    color: var(--white);
+}
+
+input, select, textarea{
+    color: var(--white);
+}
+
+
+.message-input::placeholder{
+    color: var(--white);
+}
+
+textarea{
+    resize: none;
+}
+
+.contact-text{
+    font-size: 2rem;
+    display : flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.form-button{
+    background-color: var(--magenta);
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: var(--white);
+    margin: 0 auto;
+    font-size: auto;
+}
+
+.form-button:hover{
+    transition: 0.6s;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--magenta);
+}
+
+.form-button:active{
+    background-color: #ef4fdc;
+    color: var(--white);
+}
+
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.contact-list li{
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 1rem;
+}

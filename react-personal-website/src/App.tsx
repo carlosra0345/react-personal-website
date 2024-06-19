@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MainAboutMe from "./components/MainAboutMe";
 import Experience from "./components/Experience";
+import FeaturedProjects from "./components/FeaturedProjects";
+import ContactMe from "./components/ContactMe";
+import FooterWave from "./components/FooterWave";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Hero />
       <MainAboutMe />
       <Experience />
+      <FeaturedProjects />
+      <ContactMe />
+      <FooterWave />
     </div>
   );
 }

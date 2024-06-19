@@ -31,7 +31,18 @@ const Experience = () => {
           content="Spearhead full-stack development initiatives within Mastercard's dynamic platform engineering team. 
           Leverage a robust tech stack including Golang, Node.js, React.js, Kubernetes, and AWS to architect
           and implement our internal developer platform and deployment systems."
-          skillIcons={[{image: PYTHON, alt: "Python Programming Language Logo", height: 40}, {image: MATLAB, alt: "Matlab Programming Language Logo", height: 25}]}
+          skillIcons={[
+            {
+              image: PYTHON,
+              alt: "Python Programming Language Logo",
+              height: 40,
+            },
+            {
+              image: MATLAB,
+              alt: "Matlab Programming Language Logo",
+              height: 25,
+            },
+          ]}
         />
         <Dropdown
           imageSource={TAMU}
@@ -44,7 +55,18 @@ const Experience = () => {
           and simulation of methods for enhanced oil recovery. Here I utilized and developed MATLAB programs to perform 
           computation heavy simulations while also implementing a user-interface to provide a more intuitive user experience. 
           I also maintained documentation and performed isolated unit tests before integration into codebase."
-          skillIcons={[{image: PYTHON, alt: "Python Programming Language Logo", height: 40}, {image: MATLAB, alt: "Matlab Programming Language Logo", height: 25}]}
+          skillIcons={[
+            {
+              image: PYTHON,
+              alt: "Python Programming Language Logo",
+              height: 40,
+            },
+            {
+              image: MATLAB,
+              alt: "Matlab Programming Language Logo",
+              height: 25,
+            },
+          ]}
         />
         <Dropdown
           imageSource={Paycom}
@@ -56,7 +78,18 @@ const Experience = () => {
           content="Currently working under the guidance of Dr. Prabir Daripa for my research regarding the modeling and simulation of methods for 
           enhanced oil recovery. Here I utilized and developed MATLAB programs to perform computation heavy simulations while also implementing a 
           user-interface to provide a more intuitive user experience. I also maintained documentation and performed isolated unit tests before integration into codebase."
-          skillIcons={[{image: PYTHON, alt: "Python Programming Language Logo", height: 40}, {image: MATLAB, alt: "Matlab Programming Language Logo", height: 25}]}
+          skillIcons={[
+            {
+              image: PYTHON,
+              alt: "Python Programming Language Logo",
+              height: 40,
+            },
+            {
+              image: MATLAB,
+              alt: "Matlab Programming Language Logo",
+              height: 25,
+            },
+          ]}
         />
       </div>
     </div>

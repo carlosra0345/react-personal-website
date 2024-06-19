@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import SkillIcon from "./SkillIcon";
 
 interface SkillObject {
-    image: string;
-    alt: string;
-    height: number;
-};
+  image: string;
+  alt: string;
+  height: number;
+}
 
 interface DropdownProps {
   imageSource: string;
@@ -67,16 +67,39 @@ const Dropdown = (props: DropdownProps) => {
         ></i>
       </div>
 
-      {dropdownActive && 
-      <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", marginTop: 40,}}>
-        <p>{props.content}</p>
-        <div style={{display: "flex", flexDirection: "row", gap: 20, justifyContent: "center", alignItems: "center", marginTop: 15}}>
+      {dropdownActive && (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            marginTop: 40,
+          }}
+        >
+          <p>{props.content}</p>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: 20,
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
             {props.skillIcons.map((item, index) => (
-                <SkillIcon key={index} image={item.image} alt={item.alt} iconHeight={item.height} />
+              <SkillIcon
+                key={index}
+                image={item.image}
+                alt={item.alt}
+                iconHeight={item.height}
+              />
             ))}
+          </div>
         </div>
-      </div>
-      }
+      )}
     </div>
   );
 };
