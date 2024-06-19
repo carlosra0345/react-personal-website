@@ -15,10 +15,10 @@
 }
 
 .main-text-style {
-    font-size: 1.65rem;
+  font-size: 1.65rem;
 }
 
 .link-style {
-    text-decoration: none;
-    color: var(--aqua);
+  text-decoration: none;
+  color: var(--aqua);
 }

@@ -17,7 +17,7 @@ const Heading = (props: HeadingProps) => {
         borderBottomColor: colors.darkGrey,
         borderBottomWidth: 1,
         width: "70%",
-        marginBottom: "2rem",
+        marginBottom: "4rem",
       }}
     >
       <p style={{ color: colors.aqua, fontSize: "2vw" }}>0{props.num}.</p>
