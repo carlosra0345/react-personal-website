@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import SkillIcon from "./SkillIcon";
+
+interface SkillObject {
+    image: string;
+    alt: string;
+    height: number;
+};
 
 interface DropdownProps {
   imageSource: string;
@@ -8,7 +15,7 @@ interface DropdownProps {
   startDate: string;
   endDate: string;
   content: string;
-  //   skillIcons: string[];
+  skillIcons: SkillObject[];
 }
 
 const Dropdown = (props: DropdownProps) => {
@@ -60,9 +67,16 @@ const Dropdown = (props: DropdownProps) => {
         ></i>
       </div>
 
-      {dropdownActive && <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", marginTop: 40,}}>
+      {dropdownActive && 
+      <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", marginTop: 40,}}>
         <p>{props.content}</p>
-      </div>}
+        <div style={{display: "flex", flexDirection: "row", gap: 20, justifyContent: "center", alignItems: "center", marginTop: 15}}>
+            {props.skillIcons.map((item, index) => (
+                <SkillIcon key={index} image={item.image} alt={item.alt} iconHeight={item.height} />
+            ))}
+        </div>
+      </div>
+      }
     </div>
   );
 };
