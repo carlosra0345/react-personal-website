@@ -1,23 +1,20 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import MainAboutMe from "./components/MainAboutMe";
-import Experience from "./components/Experience";
-import FeaturedProjects from "./components/FeaturedProjects";
-import ContactMe from "./components/ContactMe";
-import FooterWave from "./components/FooterWave";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./screens/Landing";
+import MoreAboutMe from "./screens/MoreAboutMe";
+import Securochat from "./screens/Securochat";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <MainAboutMe />
-      <Experience />
-      <FeaturedProjects />
-      <ContactMe />
-      <FooterWave />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Landing />} />
+          <Route element={<MoreAboutMe />} path="/more-about-me" />
+          <Route element={<Securochat />} path="/securochat" />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

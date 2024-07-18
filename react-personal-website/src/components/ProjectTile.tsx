@@ -1,4 +1,6 @@
+import { colors } from "../constants/colors";
 import SkillIcon from "./SkillIcon";
+import { Link } from "react-router-dom";
 
 interface SkillObject {
   image: string;
@@ -18,7 +20,8 @@ interface ProjectTileProps {
 
 const ProjectTile = (props: ProjectTileProps) => {
   return (
-    <div
+    <Link
+      to={"/securochat"}
       style={{
         backgroundColor: "#1a2630",
         borderRadius: 38,
@@ -33,6 +36,8 @@ const ProjectTile = (props: ProjectTileProps) => {
         padding: 40,
         gap: 25,
         cursor: "pointer",
+        textDecoration: "none",
+        color: colors.white
       }}
     >
       <img src={props.tileImage} alt={props.tileAlt} height={250} />
@@ -45,7 +50,7 @@ const ProjectTile = (props: ProjectTileProps) => {
         }}
       >
         <div>
-          <p style={{ marginBottom: 1, fontSize: 26 }} >{props.tileTitle}</p>
+          <p style={{ marginBottom: 1, fontSize: 26 }}>{props.tileTitle}</p>
           <p style={{ marginBottom: 25, fontSize: 18 }}>
             {props.startDate} - {props.endDate}
           </p>
@@ -70,7 +75,7 @@ const ProjectTile = (props: ProjectTileProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

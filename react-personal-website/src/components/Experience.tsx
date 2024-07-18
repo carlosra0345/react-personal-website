@@ -8,9 +8,9 @@ import MATLAB from "../assets/matlab.svg";
 
 const Experience = () => {
   return (
-    <div style={{ marginBottom: "10rem" }}>
+    <div id="experience" style={{ marginTop: "5rem", marginBottom: "10rem" }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Heading num={2} title="Work Experience" />
+        <Heading num={3} title="Work Experience" />
       </div>
 
       <div

@@ -1,5 +1,5 @@
-import React from "react";
 import "../styles/Navbar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -8,9 +8,9 @@ const NavBar = () => {
       style={{ fontFamily: "Oxygen mono" }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand logo nav-link brand-icon" href="index.html">
+        <Link to="/" className="navbar-brand logo nav-link brand-icon">
           <i className="bi bi-code-slash"></i>
-        </a>
+        </Link>
         <button
           className="navbar-toggler navbar-dark"
           type="button"
